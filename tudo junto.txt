@@ -1,0 +1,49 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		
+		// informação pessoais
+		
+		int idade;
+		
+		Console.WriteLine("Nome: ");
+	    Console.ReadLine();
+		
+		Console.WriteLine("Idade: ");
+		idade =  Convert.ToInt16(Console.ReadLine());
+		
+		
+		Console.WriteLine("Seu CEP: ");
+	    Console.ReadLine();
+		
+		String numero_de_celular;
+		
+		Console.WriteLine("Numero de Celular +DDD: ");
+		numero_de_celular = Console.ReadLine();
+		
+		// Calculo de nota
+		
+		int np1;
+		int np2;
+		int pim;
+        double resultado;
+		
+		Console.WriteLine("Qual foi sua nota na NP1? ");
+		np1 = Convert.ToInt16(Console.ReadLine());
+
+        Console.WriteLine(" Qual foi sua nota na NP2: ");
+        np2 = Convert.ToInt16(Console.ReadLine());
+				
+        Console.WriteLine(" Qual sua nota no Pim: ");
+        pim = Convert.ToInt16(Console.ReadLine());
+
+        resultado = np1 + np2 / 2 * 0.8 + pim *0.2;
+        			
+        Console.WriteLine(" Sua nota final foi: "+ resultado);
+
+		
+	}
+}
